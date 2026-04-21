@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Glass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="visor" id="resultado"></div>
+        <div class="teclado">
+            <button class="btn btn-especial" onclick="limpar()">C</button>
+            <button class="btn btn-especial" onclick="apagar()">DEL</button>
+            <button class="btn btn-op" onclick="inserir('/')">÷</button>
+            <button class="btn btn-op" onclick="inserir('*')">×</button>
+            
+            <button class="btn" onclick="inserir('7')">7</button>
+            <button class="btn" onclick="inserir('8')">8</button>
+            <button class="btn" onclick="inserir('9')">9</button>
+            <button class="btn btn-op" onclick="inserir('-')">-</button>
+            
+            <button class="btn" onclick="inserir('4')">4</button>
+            <button class="btn" onclick="inserir('5')">5</button>
+            <button class="btn" onclick="inserir('6')">6</button>
+            <button class="btn btn-op" onclick="inserir('+')">+</button>
+            
+            <button class="btn" onclick="inserir('1')">1</button>
+            <button class="btn" onclick="inserir('2')">2</button>
+            <button class="btn" onclick="inserir('3')">3</button>
+            <button class="btn btn-igual" onclick="calcular()">=</button>
+            
+            <button class="btn btn-zero" onclick="inserir('0')">0</button>
+            <button class="btn" onclick="inserir('.')">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
